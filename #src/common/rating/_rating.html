@@ -1,0 +1,42 @@
+<!-- @@include('common/rating/_rating.html',{
+    "parentClass": 'top-product-page__rating',
+    "edit": '',
+    "stars": '5',
+    "value": {
+    "is": true,
+    "val": '5.0',
+    }
+}) -->
+
+<div class="@@parentClass rating-block">
+    <div class="rating-wrap">
+        <div class="rating @@edit">
+            <div class="rating__line">
+                <span class="icon-star-empty"></span>
+                <span class="icon-star-empty"></span>
+                <span class="icon-star-empty"></span>
+                <span class="icon-star-empty"></span>
+                <span class="icon-star-empty"></span>
+            </div>
+            <div class="rating__activeline">
+                <span class="icon-star-full"></span>
+                <span class="icon-star-full"></span>
+                <span class="icon-star-full"></span>
+                <span class="icon-star-full"></span>
+                <span class="icon-star-full"></span>
+            </div>
+            <input value="@@stars" type="hidden" name="rating">
+            <div class="stars">
+                <span class="star"><i>Ужасно</i></span>
+                <span class="star"><i>Плохо</i></span>
+                <span class="star"><i>Нормально</i></span>
+                <span class="star"><i>Хорошо</i></span>
+                <span class="star"><i>Отлично</i></span>
+            </div>
+        </div>
+    </div>
+
+    @@if(value.is === true) {
+    <div class="rating-value">@@value.val</div>
+    }
+</div>

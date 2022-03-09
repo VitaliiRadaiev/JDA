@@ -1,0 +1,82 @@
+//<RATING>====================================================================================================
+.rating-block {
+    display: flex;
+	align-items: center;
+	
+	&.big {
+		& .rating-wrap {
+			width: 120px;
+			height: 20px;
+		}
+
+		& .rating__line {
+			font-size: 20px;
+			height: 21px;
+			color: #e4e4e4;
+		}
+
+		& .rating__activeline {
+			font-size: 20px;
+			height: 21px;
+		}
+
+		& .rating .star {
+			width: 24px;
+			height: 21px;
+		}
+	}
+}
+.rating-wrap{
+	display: table;font-size: 0; width: 80px;
+	height: 15px;
+}
+.rating{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	height: 15px;
+	&.edit .star{cursor: pointer;}
+
+	.star{width: 16px;height: 13px;display: inline-block;position: relative;z-index: 3; 
+
+	}
+}
+.rating__line{
+	position: absolute;
+	width: auto;
+	height: 13px;
+	top: 0;left: 0;
+	//background: url('../img/icons/Star-empty.svg') 0 0 no-repeat;
+	z-index: 1;
+	background-size:80px 100%;
+	display: flex;
+	font-size: 12px;
+	color: #FFC107;
+	& > span {
+		margin-right: 5px;
+	}
+}
+.rating__activeline{
+	position: absolute;
+	width: 0px;
+	height: 13px;
+	top: 0;left: 0;
+	//background: url('../img/icons/Star-full.svg') 0 0 no-repeat;
+	z-index: 2;
+	background-size:136px 100%;
+	display: flex;
+	font-size: 12px;
+	overflow: hidden;
+	color: #FFC107;
+	& > span {
+		margin-right: 5px;
+	}
+}
+.rating-value{
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 170%;
+    color: $textColor;
+}
+//</RATING>====================================================================================================

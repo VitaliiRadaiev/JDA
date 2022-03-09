@@ -1,0 +1,45 @@
+.economic {
+    position: relative;
+
+    &__title {
+        margin-bottom: 7.8rem;
+        padding-right: 6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        
+    }
+
+    &__bottom {
+        margin-top: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
+        & > * {
+            margin: 0 1.5rem;
+            min-width: 28.8rem;
+
+            @media (max-width: $md3+px) {
+                min-width: auto;
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    & .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

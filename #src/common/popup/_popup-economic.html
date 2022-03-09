@@ -1,0 +1,56 @@
+<div class="popup" id="popupEconomic">
+	<div class="popup__body">
+		<div class="popup__content container">
+			<div class="economic">
+				<div class="popup__close-btn close-btn" data-popup="close-popup">
+					<div class="close-btn__icon">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.74414 1L23.2559 22.9986" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M23.5013 1.00126L1.50126 22.9987" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+						</svg>
+					</div>
+					<div class="close-btn__text">Close</div>
+				</div>
+				<h3 class="economic__title">alaska</h3>
+				<ul class="economic__list list-col-2">
+					<li>
+						@@include('../economic-card/_economic-card.html', {
+							"icon": "img/photo/economic-card-icon-1.svg",
+							"title": "Jobs",
+							"value": "999",
+							"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium."
+						})
+					</li>
+					<li>
+						@@include('../economic-card/_economic-card.html', {
+							"icon": "img/photo/economic-card-icon-2.svg",
+							"title": "Wages",
+							"value": "$99.9M",
+							"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium."
+						})
+					</li>
+					<li>
+						@@include('../economic-card/_economic-card.html', {
+							"icon": "img/photo/economic-card-icon-3.svg",
+							"title": "Taxes",
+							"value": "$9.9M",
+							"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium."
+						})
+					</li>
+					<li>
+						@@include('../economic-card/_economic-card.html', {
+							"icon": "img/photo/economic-card-icon-4.svg",
+							"title": "GDP",
+							"value": "$9.9M",
+							"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium."
+						})
+					</li>
+				</ul>
+				<div class="economic__bottom">
+					<a href="#" class="btn btn--secondary">Download National Report</a>
+					<a href="#" class="btn btn--secondary">Download State Report</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

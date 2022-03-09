@@ -1,0 +1,23 @@
+.slider-pagination  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .swiper-pagination-bullet {
+        margin: 0 1.2rem !important;
+        flex: 1 1 auto;
+        height: 0.4rem;
+        border-radius: 1rem;
+        max-width: 5.6rem;
+
+        @media (max-width: $md3+px) {
+            height: 2px;
+            margin: 0 6px !important;
+            max-width: 30px;
+        }
+    }
+    
+    & .swiper-pagination-bullet-active {
+        background-color: $mainColor;
+    }
+}

@@ -1,0 +1,156 @@
+.footer {
+    padding-bottom: 0;
+
+    @media (max-width: $md3+px) {
+        background-color: $secondColor;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    &__row-1 {
+        margin-bottom: 6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__row-2 {
+        margin-bottom: 3.9rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 16px;
+        }
+    }
+    &__row-3 {
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 30.1rem;
+        margin: 0 auto;
+
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+
+        & img,
+        & svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__scroll-top {
+        width: 64px;
+        margin: 0 auto;
+        display: block;
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 1rem;
+
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        & > li {
+            margin-bottom: 0.8rem;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 5px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+
+                @media (max-width: $md3+px) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 1em;
+        color: #04244D;
+        font-weight: 500;
+
+        @media (max-width: $md3+px) {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+
+    &__address {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 103rem;
+        margin-left: auto;
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__address-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+
+            @media (max-width: $md3+px) {
+                margin-right: 0;
+                margin-bottom: 38px;
+            }
+        }
+    }
+
+    &__address-icon {
+        flex: 0 0 auto;
+        margin-right: 1.3rem;
+
+        & img {
+            max-height: 4.8rem;
+            width: auto;
+        }
+    }
+
+    &__address-text {
+        font-size: 19px;
+        line-height: 1.58em;
+        letter-spacing: 0.05em;
+        color: #04244D;
+        font-weight: 500;
+
+        @media (max-width: $md3+px) {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        & a {
+            color: inherit;
+        }
+    }
+}

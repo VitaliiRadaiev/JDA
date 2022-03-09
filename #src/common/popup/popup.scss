@@ -1,0 +1,58 @@
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(242, 247, 254, 0.74);
+	backdrop-filter: blur(16px);
+	z-index: 50;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+	white-space: normal;
+	outline: none;
+	-webkit-overflow-scrolling: touch;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(0);
+
+	&--open {
+		opacity: 1;
+		visibility: visible;
+
+		& .popup__content {
+			opacity: 1;
+		}
+	}
+
+	&__body {
+		min-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5rem 0rem;
+	}
+
+	&__close-btn {
+		cursor: pointer;
+		transition: all .3s ease;
+
+		@media (min-width: 992px) {
+			&:hover {
+				color: $mainColor;
+			}
+		}
+	}
+
+	&__content {
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
+}

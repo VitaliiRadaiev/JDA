@@ -1,0 +1,95 @@
+.economic-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__head {
+        align-self: flex-start;
+        background-color: $mainColor;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 1.1rem 2.2rem;
+        min-width: 26.2rem;
+        border-radius: 2rem 2rem 0 0;
+
+        @media (max-width: $md4+px) {
+            min-width: 200px;
+        }
+    }
+
+    &__icon {
+        flex: 0 0 auto;
+        margin-right: 2.6rem;
+
+        @media (max-width: $md4+px) {
+            margin-right: 12px;
+        }
+
+        & img,
+        & svg {
+            width: auto;
+            height: auto;
+            max-height: 5.1rem;
+
+            @media (max-width: $md4+px) {
+                max-height: 35px;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 1em;
+
+        @media (max-width: $md4+px) {
+            font-size: 28px;
+        }
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        border-radius: 0 2rem 2rem 2rem;
+        padding: 5.2rem 3rem 2.7rem;
+        text-align: center;
+        color: #123559;
+        min-height: 18.4rem;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $md4+px) {
+            padding: 30px 15px 20px;
+            min-height: 100px;
+        }
+    }
+
+    &__value {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1em;
+        margin-bottom: 2rem;
+
+        @media (max-width: $md4+px) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+        display: none;
+    }
+
+    &__btn {
+        margin-top: auto;
+        text-decoration: underline;
+        transition: all .3s ease;
+        cursor: pointer;
+        font-weight: 500;
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+}

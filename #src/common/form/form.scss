@@ -1,0 +1,98 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5.7rem 5rem 5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 58.6rem;
+
+    @media (max-width: $md3+px) {
+        padding: 50px 20px 34px;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 31.3rem;
+
+        @media (max-width: $md4+px) {
+            max-width: 230px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.9rem;
+
+            @media (max-width: $md4+px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__submit {
+        margin-top: 2.7rem;
+        align-self: center;
+
+        @media (max-width: $md4+px) {
+            margin-top: 11px;
+        }
+    }
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(40, 83, 143, 0.05);
+    border-radius: 0.8rem;
+    height: 4rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 1.58em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: $secondFontFamily;
+
+    &:focus {
+        border-color: $secondColor;
+    }
+
+    &::placeholder {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+    }
+}
+.textarea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(40, 83, 143, 0.05);
+    border-radius: 0.8rem;
+    height: 10rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 1.58em;
+    letter-spacing: 0.05em;
+    font-family: $secondFontFamily;
+    font-weight: 400;
+
+    &:focus {
+        border-color: $secondColor;
+    }
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+
+    }
+}

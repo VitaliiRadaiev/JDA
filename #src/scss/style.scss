@@ -1,0 +1,59 @@
+//<MIXINE>===============================================================================================
+@import "mixins.scss";
+//</MIXINE>===============================================================================================
+
+// ==== FONTS ===========================================================================================
+@import "fonts";
+// ==== // FONTS ===========================================================================================
+
+// ==== Normalize ===========================================================================================
+@import "normalize";
+// ==== // НОРМАЛАЙЗ ===========================================================================================
+
+//<ICOMOON>===============================================================================================
+@import "../icomoon/style";
+//</ICOMOON>===============================================================================================
+
+// ==== PLUGINS ===========================================================================================
+@import "plugins/swiper-bundle";
+//@import "plugins/fancybox.scss";
+// ==== // PLUGINS ===========================================================================================
+
+// ==== VARS ===========================================================================================
+@import "vars";
+// ==== // VARS ===========================================================================================
+
+
+// ==== BASE STYLES ===========================================================================================
+@import "base";
+// ==== // BASE STYLES ===========================================================================================
+
+
+// ==== COMMON BLOCKS =====================================================
+@import "../common/header/header";
+@import "../common/footer/footer";
+@import "../common/buttons/buttons";
+@import "../common/promo-header/promo-header";
+@import "../common/video/video";
+@import "../common/text-block/text-block";
+@import "../common/interactive-map/interactive-map";
+@import "../common/simple-cards-carousel/simple-cards-carousel";
+@import "../common/slider-buttons/slider-buttons";
+@import "../common/slider-pagination/slider-pagination";
+@import "../common/partners/partners";
+@import "../common/services/services";
+@import "../common/card/card";
+@import "../common/list-col-2/list-col-2";
+@import "../common/cta/cta";
+@import "../common/brochure/brochure";
+@import "../common/bottom-form/bottom-form";
+@import "../common/form/form";
+@import "../common/popup/popup";
+@import "../common/popup/popup-economic";
+@import "../common/cookies-message/cookies-message";
+@import "../common/economic-card/economic-card";
+// ==== // COMMON BLOCKS =====================================================
+
+// ==== PAGES =====================================================
+@import "pages/home";
+// ==== AND PAGES =====================================================

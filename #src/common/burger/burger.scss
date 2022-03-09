@@ -1,0 +1,51 @@
+.burger-wrap {
+	display: inline-block;
+	transition: all .2s ease;
+
+	& .burger {
+		width: 42px;
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		cursor: pointer;
+	}
+
+	& .burger span {
+		width: 22px;
+		height: 2px;
+		display: block;
+		background: $mainColor;
+		position: absolute;
+		transition: all 0.2s;
+	}
+
+	& .burger span:nth-child(1) {
+		top:11px;
+		right: 10px;
+	}
+
+	& .burger span:nth-child(4) {
+		bottom:11px;
+		width: 16px;
+		left: 10px;
+	}
+
+	.second {
+		transform: rotate(45deg);
+	}
+
+	.third {
+		transform: rotate(-45deg);
+	}
+
+	.first {
+		transform:  scale(0) !important;
+	}
+
+	.fourth {
+			transform: scale(0) !important;
+	}
+}

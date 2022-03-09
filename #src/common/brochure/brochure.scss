@@ -1,0 +1,85 @@
+.brochure {
+    &__title {
+    }
+
+    &__body {
+        
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__col-1 {
+        flex: 0 0 52%;
+        min-height: 51.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @media (max-width: $md3+px) {
+            min-height: auto;
+            height: 291px;
+        }
+    }
+
+    &__img-decor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        width: 48rem;
+        max-width: 100%;
+
+        @media (max-width: $md3+px) {
+            width: 230px;
+        }
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__col-2 {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1.5rem;
+
+        @media (max-width: $md3+px) {
+            text-align: center;
+            padding-left: 0;
+            display: block;
+        }
+    }
+
+    &__img {
+        height: 36.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: $md3+px) {
+            height: 178px;
+        }
+
+        & img {
+
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__text {
+
+    }
+}

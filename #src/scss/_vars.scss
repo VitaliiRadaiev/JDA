@@ -1,0 +1,47 @@
+
+
+//<ШРИФТЫ>===========================================================================================================
+$mainFontFamily:  'Josefin Sans', sans-serif;
+$secondFontFamily: 'Montserrat', sans-serif;
+$fontAwesome: "Font Awesome 5 Free";
+//</ШРИФТЫ>===========================================================================================================
+
+//<РАЗМЕРЫ КОНТЕЙНЕРА>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: 1267.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</РАЗМЕРЫ КОНТЕЙНЕРА>===========================================================================================================
+
+$textColor: #2C2C2C;
+$textColorSecondary: #123559;
+$mainColor: #F79838;
+$secondColor: #28538F;
+$dangerColor:  #FF4444;
+$successColor:#00C367;
+$infoColor: #BC62EF;
+$lightColor: #F6F6F6;
+$warningColor: #FFC31C;
+
+
+:root {
+    --bs-primary: #F79838;
+    --bs-secondary: #28538F;
+    --bs-success: #00C367;
+    --bs-info: #BC62EF;
+    --bs-warning: #FFC31C;
+    --bs-danger: #FF4444;
+    --bs-light: #F6F6F6;
+    --bs-dark: #000;
+
+    --bs-primary-rgb: 247, 152, 56;
+    --bs-secondary-rgb: 40, 83, 143;
+    --bs-success-rgb: 0, 195, 103;
+    --bs-info-rgb: 188, 98, 239;
+    --bs-warning-rgb: 255, 195, 28;
+    --bs-danger-rgb: 255, 68, 68;
+    --bs-light-rgb: 246, 246, 246;
+    --bs-dark-rgb: 0, 0, 0;
+}

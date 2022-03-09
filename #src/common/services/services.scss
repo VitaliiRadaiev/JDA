@@ -1,0 +1,32 @@
+.services {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.4rem -6.2rem;
+        padding-left: 0;
+
+        @media (max-width: $md3+px) {
+            margin: 0 -5px -18px;
+        }
+
+        & > li {
+            padding: 0 1.4rem;
+            margin-bottom: 6.2rem;
+            flex: 0 1 calc(100% / 3);
+
+            @media (max-width: $md2+px) {
+                flex: 0 1 50%;
+            }
+
+            @media (max-width: $md3+px) {
+                flex: 0 1 calc(100% / 3);
+                padding: 0 5px;
+                margin-bottom: 18px;
+            }
+
+            @media (max-width: 399.98px) {
+                flex: 0 1 50%;
+            }
+        }
+    }
+}

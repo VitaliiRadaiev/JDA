@@ -1,0 +1,43 @@
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: calc(100% + 60px);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-button {
+    pointer-events: auto;
+    padding: 0 5px;
+    font-size: 73px;
+    color: #C4C4C4;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    @media (min-width: 992px) {
+        &:hover {
+            color: $textColor;
+        }
+    }
+
+    @media (max-width: $md3+px) {
+        display: none;
+    }
+
+    & svg {
+        height: 1em;
+        width: auto;
+    }
+
+    &--prev {
+
+    }
+
+    &--next {
+
+    }
+}

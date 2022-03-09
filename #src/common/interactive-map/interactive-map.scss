@@ -1,0 +1,41 @@
+.interactive-map {
+
+    &__head {
+
+    }
+
+    &__body {
+        & svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text {
+        pointer-events: none;
+        transition: all .3s ease;
+
+        &.active {
+            fill: $mainColor;
+        }
+    }
+
+    &__area {
+        transition: all .3s ease;
+        cursor: pointer;
+
+        &.active {
+            fill: $mainColor;
+            stroke: $mainColor;
+        }
+    }
+
+    &__btn {
+        transition: all .3s ease;
+        cursor: pointer;
+
+        &.active, &.txtt {
+            stroke: $mainColor;
+        }
+    }
+}

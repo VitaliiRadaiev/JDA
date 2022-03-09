@@ -1,0 +1,39 @@
+.text-block {
+    &--bottom-space {
+        margin-bottom: 5rem;
+    }
+    &__title {
+    }
+
+    &__text {
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+        &--secondary {
+            padding: 0 9.7rem;
+
+            @media (max-width: $md2+px) {
+                padding: 0 50px;
+            }
+            @media (max-width: $md3+px) {
+                padding: 0;
+            }
+
+            &.text-content {
+                line-height: 1.59em;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+
+    &__media-wrap {
+        width: 100%;
+        margin-bottom: 4rem;
+
+        @media (min-width: 768px) {
+            max-width: 56rem;
+            float: right;
+            margin-left: 6rem;
+        }
+    }
+}

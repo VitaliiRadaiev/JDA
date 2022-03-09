@@ -1,0 +1,22 @@
+.pagging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px;
+
+    &__arrow {
+        display: inline-flex;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        & > li {
+            margin: 0 6px;
+        }
+    }
+
+    &__item {
+    }
+}

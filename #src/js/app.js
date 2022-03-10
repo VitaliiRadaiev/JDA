@@ -186,6 +186,7 @@ class App {
 		@@include('../common/interactive-map/interactive-map.js');
 		@@include('../common/cookies-message/cookies-message.js');
 		@@include('../common/economic-card/economic-card.js');
+		@@include('../common/person-card/person-card.js');
 	}
 
 }

@@ -118,6 +118,34 @@ textarea {
 	appearance: none;
 }
 
+h1 {
+	font-weight: 600;
+	font-size: 14.4rem;
+	line-height: 1em;
+	text-transform: uppercase;
+
+	@media (max-width: 1399.98px) {
+		font-size: 120px;
+	}
+
+	@media (max-width: $md1+px) {
+		font-size: 100px;
+	}
+	@media (max-width: $md2+px) {
+		font-size: 82px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 52px;
+	}
+	@media (max-width: $md4+px) {
+		font-size: 42px;
+	}
+
+	@media (max-width: 399.98px) {
+		font-size: 32px;
+	}
+}
+
 h2 {
 	font-weight: 600;
 	font-size: 4.8rem;
@@ -141,7 +169,21 @@ h3 {
 		margin-bottom: 20px;
 		line-height: 1em;
 	}
+
+
+	&.team-title {
+		font-family: $secondFontFamily;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 1.22em;
+
+        @media (max-width: $md4+px) {
+            font-size: 38px;
+        }
+	}
 }
+
 
 h4 {
 }

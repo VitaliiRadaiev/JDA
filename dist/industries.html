@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JDA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header" data-header data-popup="lock-padding">
+    <div class="header__body container">
+        <div class="header__row-1">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <a href="#" class="header__btn btn btn--primary">Consultation</a>
+            <a href="#" class="header__btn btn btn--secondary">Log In</a>
+        </div>
+
+        <div class="header__row-2">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__link current-menu-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Team</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="menu__link ">About</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="sub-menu__link" href="#">Omega</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Rado</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Longines</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Tissot</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Balmain</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Certina</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Calvin Klein</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="menu__link ">Areas</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="sub-menu__link" href="#">Omega</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Rado</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Longines</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Tissot</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Balmain</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Certina</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Calvin Klein</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="menu__link ">Services</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="sub-menu__link" href="#">Omega</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Rado</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Longines</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Tissot</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Balmain</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Certina</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Calvin Klein</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="menu__link ">Industries</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="sub-menu__link" href="#">Omega</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Rado</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Longines</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Tissot</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Balmain</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Certina</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu__link" href="#">Calvin Klein</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav">
+    <div class="mobile-nav__body container">
+        <div class="mobile-nav__item" data-action="open-mobile-menu">
+            <div class="mobile-nav__icon">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+            <div class="mobile-nav__title">Menu</div>
+        </div>
+        <a href="#" class="mobile-nav__item">
+            <div class="mobile-nav__icon">
+                <img src="img/icons/user.svg" alt="">
+            </div>
+            <div class="mobile-nav__title">Log In</div>
+        </a>
+        <div class="mobile-nav__item">
+            <div class="mobile-nav__icon">
+                <img src="img/icons/ask.svg" alt="">
+            </div>
+            <div class="mobile-nav__title">Ask</div>
+        </div>
+        <a href="tel:8888888888" class="mobile-nav__item">
+            <div class="mobile-nav__icon">
+                <img src="img/icons/phone.svg" alt="">
+            </div>
+            <div class="mobile-nav__title">Call</div>
+        </a>
+    </div>
+</div>
+
+
+<div class="mobile-menu-close close-btn" data-action="close-mobile-menu">
+    <div class="close-btn__icon">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.74414 1L23.2559 22.9986" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M23.5013 1.00126L1.50126 22.9987" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </div>
+    <div class="close-btn__text">Close</div>
+</div>
+
+<div class="mobile-menu menu" data-mobile-menu>
+    <ul class="menu__list">
+        <li>
+            <a href="#" class="menu__link current-menu-item">Home</a>
+        </li>
+        <li>
+            <a href="#" class="menu__link">Team</a>
+        </li>
+        <li class="menu-item-has-children">
+            <a href="#" class="menu__link ">About</a>
+            <ul class="sub-menu">
+                <li>
+                    <a class="sub-menu__link" href="#">Omega</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Rado</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Longines</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Tissot</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Balmain</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Certina</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children">
+            <a href="#" class="menu__link ">Areas</a>
+            <ul class="sub-menu">
+                <li>
+                    <a class="sub-menu__link" href="#">Omega</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Rado</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Longines</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Tissot</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Balmain</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Certina</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children">
+            <a href="#" class="menu__link ">Services</a>
+            <ul class="sub-menu">
+                <li>
+                    <a class="sub-menu__link" href="#">Omega</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Rado</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Longines</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Tissot</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Balmain</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Certina</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children">
+            <a href="#" class="menu__link ">Industries</a>
+            <ul class="sub-menu">
+                <li>
+                    <a class="sub-menu__link" href="#">Omega</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Rado</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Longines</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Tissot</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Balmain</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Certina</a>
+                </li>
+                <li>
+                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="menu__link">Resources</a>
+        </li>
+        <li>
+            <a href="#" class="menu__link">Blog</a>
+        </li>
+        <li>
+            <a href="#" class="menu__link">Contact</a>
+        </li>
+    </ul>
+</div>
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page home-page" data-padding-top-header-size>
+        <div class="padding-wrap pt-0">
+    <section class="hero">
+        <div class="hero__bg ibg">
+            <img src="img/photo/hero-bg.jpg" alt="">
+        </div>
+        <div class="hero__body container">
+            <h1 class="hero__title">INDUSTRIES</h1>
+        </div>
+    </section>
+</div>
+         
+        <div class="padding-wrap">
+            <div class="container">
+                <div class="text-block text-block--bottom-space">
+                    <h3 class="text-block__title text-center">INDUSTRIES</h3>
+                    <div class="text-block__text text-block__text--secondary text-content text-center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus dolor, congue in
+                            rutrum ac, convallis sagittis turpis. Donec mi nisi, malesuada ut laoreet in, aliquet ut
+                            lectus.
+                        </p>
+                    </div>
+                    <div class="text-block__text text-content text-center mt-5">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo erat eget dolor
+                            euismod,
+                            nec aliquet tortor auctor. Sed posuere ipsum in ipsum suscipit, malesuada faucibus nulla
+                            tristique. Nulla convallis ac arcu eget aliquam. Class aptent taciti sociosqu ad litora
+                            torquent
+                            per conubia nostra, per inceptos himenaeos. In id massa ac diam molestie suscipit id.
+                        </p>
+                    </div>
+                </div>
+
+				<div class="simple-cards-carousel" data-slider="simple-cards-carousel">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            
+                <div class="swiper-slide">
+                    <a href="#" class="simple-card">
+                        <div class="simple-card__img ibg">
+                            <img src="img/photo/simple-card-img-4.jpg" alt="">
+                        </div>
+                        <div class="simple-card__title">
+                            Government
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="swiper-slide">
+                    <a href="#" class="simple-card">
+                        <div class="simple-card__img ibg">
+                            <img src="img/photo/simple-card-img-5.jpg" alt="">
+                        </div>
+                        <div class="simple-card__title">
+                            Manufacturing
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="swiper-slide">
+                    <a href="#" class="simple-card">
+                        <div class="simple-card__img ibg">
+                            <img src="img/photo/simple-card-img-6.jpg" alt="">
+                        </div>
+                        <div class="simple-card__title">
+                            Energy
+                        </div>
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+    <div class="slider-buttons">
+    <div class="slider-button slider-button--prev" data-action="btn-prev">
+        <svg width="19" height="77" viewBox="0 0 19 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2L3.93287 30.0559C1.43954 35.4092 1.43954 41.5908 3.93287 46.9441L17 75" stroke="currentColor"
+                stroke-width="3" stroke-linecap="round" />
+        </svg>
+    </div>
+    <div class="slider-button slider-button--next" data-action="btn-next">
+        <svg width="19" height="77" viewBox="0 0 19 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 75L15.0671 46.9441C17.5605 41.5908 17.5605 35.4092 15.0671 30.0559L2 2" stroke="currentColor"
+                stroke-width="3" stroke-linecap="round" />
+        </svg>
+    </div>
+</div>
+    <div class="slider-pagination" data-slider="pagination"></div>
+</div>
+            </div>
+        </div>
+
+        <div class="padding-wrap">
+    <section class="brochure">
+        <div class="container">
+            <h3 class="brochure__title text-center">Download a brochure</h3>
+            <div class="brochure__body">
+                <div class="brochure__col-1">
+                    <div class="brochure__img-decor">
+                        <img src="img/photo/square.svg" alt="">
+                    </div>
+                    <div class="brochure__img">
+                        <img src="img/photo/brochure-img.png" alt="">
+                    </div>
+                </div>
+                <div class="brochure__col-2">
+                    <div class="brochure__text text-content">
+                        <p>
+                            In 30 seconds you can walk into a legislator’s or regulator’s office and demonstrate your company’s, industry’s, trade association’s, or non-profit’s economic impact on smart phone or tablet.
+                        </p>
+                        <p>
+                            At JDA we develop and tell stories about our clients’ industries, and we support those stories with economic data. For more information click the button below and download a copy of our brochure today.
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn--secondary btn--with-arrow">Download Brochure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <div class="padding-wrap">
+    <section class="bottom-form">
+        <div class="bottom-form__bg ibg">
+            <img src="img/photo/partners-bg.jpg" alt="">
+        </div>
+        <div class="bottom-form__body container">
+            <form class="form box">
+                <h3 class="form__title text-center">how we can help?</h3>
+                <div class="form__item">
+                    <input class="input" type="text" placeholder="First Name">
+                </div>
+                <div class="form__item">
+                    <input class="input" type="text" placeholder="Last Name">
+                </div>
+                <div class="form__item">
+                    <input class="input" type="text" placeholder="Company Name">
+                </div>
+                <div class="form__item">
+                    <input class="input" type="text" placeholder="Job Title">
+                </div>
+                <div class="form__item" data-mask="+9(999) 999-99-99">
+                    <input class="input" type="text" placeholder="Phone Number">
+                </div>
+                <div class="form__item">
+                    <input class="input" type="text" placeholder="Email">
+                </div>
+                <div class="form__item">
+                    <textarea class="textarea" placeholder="Any questions..."></textarea>
+                </div>
+                <button class="form__submit btn btn--secondary">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer padding-wrap">
+    <div class="container">
+
+
+        <div class="footer__row-1">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <a data-scroll href="#" class="footer__scroll-top">
+                <img src="img/icons/scroll-top.svg" alt="">
+            </a>
+        </div>
+        <div class="footer__row-2">
+            <div class="footer__nav">
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Team</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Areas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Industries</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link">ADA Compliance</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__row-3">
+            <div class="footer__address">
+                <div class="footer__address-item">
+                    <div class="footer__address-icon">
+                        <img src="img/icons/address-phone.svg" alt="">
+                    </div>
+                    <div class="footer__address-text">
+                        <a href="tel:2122392105">(212) 239-2105</a>
+                    </div>
+                </div>
+                <div class="footer__address-item">
+                    <div class="footer__address-icon">
+                        <img src="img/icons/address-marker.svg" alt="">
+                    </div>
+                    <div class="footer__address-text">
+                        1241 Gulf of Mexico Dr, <br> Longboat Key, FL 34228
+                    </div>
+                </div>
+                <div class="footer__address-item">
+                    <div class="footer__address-icon">
+                        <img src="img/icons/address-email.svg" alt="">
+                    </div>
+                    <div class="footer__address-text">
+                        <a href="mailto:info@guerrillaeconomics.com">info@guerrillaeconomics.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+    <div class="popup" id="popupEconomic">
+	<div class="popup__body">
+		<div class="popup__content container">
+			<div class="economic">
+				<div class="popup__close-btn close-btn" data-popup="close-popup">
+					<div class="close-btn__icon">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.74414 1L23.2559 22.9986" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M23.5013 1.00126L1.50126 22.9987" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+						</svg>
+					</div>
+					<div class="close-btn__text">Close</div>
+				</div>
+				<h3 class="economic__title">alaska</h3>
+				<ul class="economic__list list-col-2">
+					<li>
+						<div class="economic-card" data-economic-card>
+    <div class="economic-card__head">
+        <div class="economic-card__icon">
+            <img src="img/photo/economic-card-icon-1.svg" alt="">
+        </div>
+        <div class="economic-card__title">Jobs</div>
+    </div>
+    <div class="economic-card__body box">
+        <div class="economic-card__value">999</div>
+        <div class="economic-card__text text-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium.</div>
+        <div class="economic-card__btn">Read More</div>
+    </div>
+</div>
+					</li>
+					<li>
+						<div class="economic-card" data-economic-card>
+    <div class="economic-card__head">
+        <div class="economic-card__icon">
+            <img src="img/photo/economic-card-icon-2.svg" alt="">
+        </div>
+        <div class="economic-card__title">Wages</div>
+    </div>
+    <div class="economic-card__body box">
+        <div class="economic-card__value">$99.9M</div>
+        <div class="economic-card__text text-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium.</div>
+        <div class="economic-card__btn">Read More</div>
+    </div>
+</div>
+					</li>
+					<li>
+						<div class="economic-card" data-economic-card>
+    <div class="economic-card__head">
+        <div class="economic-card__icon">
+            <img src="img/photo/economic-card-icon-3.svg" alt="">
+        </div>
+        <div class="economic-card__title">Taxes</div>
+    </div>
+    <div class="economic-card__body box">
+        <div class="economic-card__value">$9.9M</div>
+        <div class="economic-card__text text-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium.</div>
+        <div class="economic-card__btn">Read More</div>
+    </div>
+</div>
+					</li>
+					<li>
+						<div class="economic-card" data-economic-card>
+    <div class="economic-card__head">
+        <div class="economic-card__icon">
+            <img src="img/photo/economic-card-icon-4.svg" alt="">
+        </div>
+        <div class="economic-card__title">GDP</div>
+    </div>
+    <div class="economic-card__body box">
+        <div class="economic-card__value">$9.9M</div>
+        <div class="economic-card__text text-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero deserunt culpa dignissimos odio sed provident esse dolor tempora laudantium.</div>
+        <div class="economic-card__btn">Read More</div>
+    </div>
+</div>
+					</li>
+				</ul>
+				<div class="economic__bottom">
+					<a href="#" class="btn btn--secondary">Download National Report</a>
+					<a href="#" class="btn btn--secondary">Download State Report</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="cookies-message" data-cookies-message>
+    <div class="container cookies-message__body">
+        <div class="cookies-message__text">
+            This website uses cookies to provide better user experience 
+        </div>
+        <a href="#" class="cookies-message__agree" data-action="cookies-message-close">AGREE</a>
+        <a href="#" class="cookies-message__disagree">REPORT A BUG</a>
+    </div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

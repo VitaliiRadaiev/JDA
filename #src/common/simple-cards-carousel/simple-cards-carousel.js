@@ -10,17 +10,14 @@ if(simpleCardsCarousels.length) {
             sliderActiveParams = true;
         }
         let swiperSimpleCardsCarousel = new Swiper(simpleCardsCarousel.querySelector('.swiper'), {
-            /*
-            effect: 'fade',
+            
             autoplay: {
-                delay: 3000,
+                delay: 4000,
                 disableOnInteraction: false,
             },
-            */
             slidesPerView: 3,
             spaceBetween: 0,
             speed: 800,
-            //initialSlide: 1,
             loopAdditionalSlides: 2,
             centeredSlides: sliderActiveParams,
             loop: sliderActiveParams,

@@ -1,97 +1,14 @@
 <div class="simple-cards-carousel" data-slider="simple-cards-carousel">
     <div class="swiper">
         <div class="swiper-wrapper">
-            @@if(slider === true) {
+            @@for (var i = 0; i < items.length; i++) {
                 <div class="swiper-slide">
                     <a href="#" class="simple-card">
                         <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-1.jpg" alt="">
+                            <img src="`+items[i].url+`" alt="">
                         </div>
                         <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-2.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-3.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-1.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-2.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-3.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-            }
-
-            @@if(slider === false) {
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-1.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-2.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="simple-card">
-                        <div class="simple-card__img ibg">
-                            <img src="img/photo/simple-card-img-3.jpg" alt="">
-                        </div>
-                        <div class="simple-card__title">
-                            Economic Reports
+                            `+items[i].title+`
                         </div>
                     </a>
                 </div>

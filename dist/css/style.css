@@ -2223,6 +2223,35 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #000;
+}
+
+.promo-header__bg img {
+  opacity: 0.7;
+}
+
+.promo-header__bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+
+.promo-header__bg iframe {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.7;
 }
 
 .promo-header__body {
@@ -2310,7 +2339,7 @@ figure {
 }
 
 .text-block__text--secondary {
-  padding: 0 9.7rem;
+  padding: 0 7rem;
 }
 
 .text-block__text--secondary.text-content {
@@ -2386,6 +2415,9 @@ figure {
 
 .simple-cards-carousel--three-slides .swiper-slide {
   opacity: 1 !important;
+  -webkit-transform: scale(0.97) !important;
+      -ms-transform: scale(0.97) !important;
+          transform: scale(0.97) !important;
 }
 
 .simple-cards-carousel .swiper {
@@ -2444,6 +2476,11 @@ figure {
   z-index: 1;
   border-radius: 2rem;
   overflow: hidden;
+  background-color: #28538F;
+}
+
+.simple-card__img img {
+  opacity: 0.7;
 }
 
 .simple-card__title {
@@ -3718,6 +3755,9 @@ figure {
 
 .featured-card__link {
   text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .team-list {
@@ -3788,10 +3828,6 @@ figure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .featured-card__link {
-    display: none;
   }
 
   .team-list > li:nth-child(even) .team-item {
@@ -3985,6 +4021,10 @@ figure {
     color: #2C2C2C !important;
     -webkit-box-shadow: 0px 4px 29px rgba(40, 83, 143, 0.5);
             box-shadow: 0px 4px 29px rgba(40, 83, 143, 0.5);
+  }
+
+  .featured-card__link:hover {
+    color: #F79838;
   }
 }
 

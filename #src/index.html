@@ -14,9 +14,23 @@
 	<main class="_page home-page" data-padding-top-header-size>
 		<div class="padding-wrap pt-0">
 			<section class="promo-header">
-				<div class="promo-header__bg ibg">
+				<!-- PICTURE -->
+				<!-- <div class="promo-header__bg ibg">
 					<img src="img/photo/promo-header-bg.jpg" alt="">
+				</div> -->
+
+				<!-- VIDEO -->
+				<div class="promo-header__bg ibg">
+					<video poster="img/photo/promo-header-bg.jpg" data-media-mobile="img/videoForTest.mp4" autoplay muted loop
+						playsinline controlslist="nodownload" crossorigin="anonymous">
+						<source src="img/videoForTest.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video> 
 				</div>
+
+				<!-- VIMEO VIDEO -->
+				<!-- <div class="promo-header__bg ibg" data-vimeo-poster="img/photo/promo-header-bg.jpg" data-vimeo-id="589884423" data-vimeo-mobile-id="589884750"></div> -->
+
+
 				<div class="promo-header__body container">
 					<h2 class="promo-header__title">
 						Economic studies & models to
@@ -81,7 +95,7 @@
 				</div>
 
 				@@include('common/simple-cards-carousel/_simple-cards-carousel.html', {
-				"slider": true
+				"items": [{"url": "img/photo/simple-card-img-1.jpg", "title": "Economic Reports"}, {"url": "img/photo/simple-card-img-2.jpg", "title": "Economic Forecasts"}, {"url": "img/photo/simple-card-img-3.jpg", "title": "Economic Models"}, {"url": "img/photo/simple-card-img-1.jpg", "title": "Economic Reports"}, {"url": "img/photo/simple-card-img-2.jpg", "title": "Economic Forecasts"}, {"url": "img/photo/simple-card-img-3.jpg", "title": "Economic Models"}]
 				})
 			</div>
 		</div>
@@ -144,7 +158,7 @@
 				</div>
 
 				@@include('common/simple-cards-carousel/_simple-cards-carousel.html', {
-				"slider": true
+					"items": [{"url": "img/photo/simple-card-img-4.jpg", "title": "Government"}, {"url": "img/photo/simple-card-img-5.jpg", "title": "Manufacturing"}, {"url": "img/photo/simple-card-img-6.jpg", "title": "Energy"}, {"url": "img/photo/simple-card-img-4.jpg", "title": "Government"}, {"url": "img/photo/simple-card-img-5.jpg", "title": "Manufacturing"}, {"url": "img/photo/simple-card-img-6.jpg", "title": "Energy"}]
 				})
 			</div>
 		</div>

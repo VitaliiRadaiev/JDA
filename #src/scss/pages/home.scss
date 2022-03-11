@@ -257,8 +257,12 @@
 
     &__link {
         text-decoration: underline;
-        @media (min-width: 768px) {
-            display: none;
+        transition: all .3s ease;
+        
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
         }
     }
 }

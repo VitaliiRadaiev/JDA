@@ -54,6 +54,8 @@
 @import "../common/economic-card/economic-card";
 @import "../common/hero/hero";
 @import "../common/person-card/person-card";
+@import "../common/cards-carousel/cards-carousel";
+@import "../common/article-info/article-info";
 // ==== // COMMON BLOCKS =====================================================
 
 // ==== PAGES =====================================================
@@ -63,5 +65,13 @@
 @import "pages/about";
 @import "pages/areas";
 @import "pages/areas-detail";
+@import "pages/services";
+@import "pages/services-detail";
 @import "pages/industries";
+@import "pages/industries-detail";
+@import "pages/resources";
+@import "pages/resources-detail";
+@import "pages/blog";
+@import "pages/blog-detail";
 // ==== AND PAGES =====================================================
+

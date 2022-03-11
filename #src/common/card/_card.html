@@ -5,7 +5,19 @@
     <div class="card__inner">
         <div class="card__title">@@title</div>
         @@if(meta) {
-            <div class="card__meta"></div>
+            <div class="card__meta">
+                <div class="card__meta-item">
+                    <img src="img/photo/card-avatar.jpg" alt="">
+                    <div>By <strong>John Dunham</strong></div>
+                    
+                </div>
+                <div class="card__meta-item">
+                    <div>Published: <strong>August 21, 2021</strong></div>
+                </div>
+                <div class="card__meta-item">
+                    <div>Updated: <strong>August 21, 2021</strong></div>
+                </div>
+            </div>
         }
         <div class="card__text">@@text</div>
     </div>

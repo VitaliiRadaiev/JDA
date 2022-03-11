@@ -48,6 +48,7 @@ class App {
 	slidersInit() {
 		@@include('../common/simple-cards-carousel/simple-cards-carousel.js');
 		@@include('../common/partners/partners.js');
+		@@include('../common/cards-carousel/cards-carousel.js');
 	}
 
 	tabsInit() {
@@ -148,7 +149,7 @@ class App {
 				let id = setInterval(setPedding, 200);
 				setTimeout(() => {
 					clearInterval(id);
-				}, 1000)
+				}, 2000)
 				window.addEventListener('resize', setPedding);
 			}
 

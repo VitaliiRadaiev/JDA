@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "JDA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page home-page" data-padding-top-header-size>
+        <div class="padding-wrap pt-0">
+            <section class="report-header">
+                <div class="report-header__bg ibg">
+                    <img src="img/photo/report-bg.jpg" alt="">
+                </div>
+                <div class="report-header__body container">
+                    <div class="report-header__col-1">
+                        <h3 class="report-header__title">
+                            Economic studies & models to
+                            win the legislative battles.
+
+                        </h3>
+                        <p class="report-header__subtitle">
+                            November/December 2021
+                        </p>
+                        <div class="report-header__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus dolor, congue in rutrum ac, convallis sagittis turpis. Donec mi nisi, malesuada ut laoreet in, aliquet ut lectus. Mauris vehicula ut ex consectetur posuere. Ut faucibus quam sed neque ullamcorper, vel feugiat justo aliquet. Aliquam rutrum arcu quis nisi pharetra congue. Vivamus pulvinar felis non ante rhoncus vulputate. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="report-header__col-2">
+                        <form class="form box">
+                            <h3 class="form__title text-center">download free report</h3>
+                            <div class="form__item">
+                                <input class="input" type="text" placeholder="First Name">
+                            </div>
+                            <div class="form__item">
+                                <input class="input" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="form__item">
+                                <input class="input" type="text" placeholder="Email">
+                            </div>
+                            <div class="form__item">
+                                <input class="input" type="text" placeholder="Company Name">
+                            </div>
+                            <div class="form__item">
+                                <div class="select-wrap">
+                                    <select name="" class="_select">
+                                        <option value="0" selected>Student</option>
+                                        <option value="1">Professor</option>
+                                        <option value="2">Scientist</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="form__submit btn btn--secondary btn--with-arrow">Download Free Report</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        @@include('common/cta/_cta.html')
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+    @@include('common/popup/_popup-economic.html',{})
+    @@include('common/cookies-message/_cookies-message.html',{})
+
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

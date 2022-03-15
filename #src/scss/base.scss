@@ -186,6 +186,10 @@ h3 {
 
 
 h4 {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 1.2em;
+	color: $textColorSecondary;
 }
 
 h5 {
@@ -341,6 +345,10 @@ figure {
 
 .bg-primary {
 	background: $mainColor !important;
+}
+
+.bg-secondary {
+	background: $secondColor !important;
 }
 
 .bg-success {

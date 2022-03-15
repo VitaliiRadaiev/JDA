@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "JDA"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page home-page" data-padding-top-header-size>
+        @@include('common/hero/_hero.html', {
+        "title": "consultation"
+        })
+        
+        <div class="padding-wrap">
+            <div class="container">
+                <div class="text-block">
+                    <h3 class="text-block__title text-center">consultation</h3>
+                    <div class="text-block__text text-block__text--secondary text-content text-center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus dolor, congue in
+                            rutrum ac, convallis sagittis turpis. Donec mi nisi, malesuada ut laoreet in, aliquet ut
+                            lectus.
+                        </p>
+                    </div>
+                    <div class="text-block__text text-content text-center mt-5">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo erat eget dolor
+                            euismod,
+                            nec aliquet tortor auctor. Sed posuere ipsum in ipsum suscipit, malesuada faucibus nulla
+                            tristique. Nulla convallis ac arcu eget aliquam. Class aptent taciti sociosqu ad litora
+                            torquent
+                            per conubia nostra, per inceptos himenaeos. In id massa ac diam molestie suscipit id.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('common/bottom-form/_bottom-form.html', {
+        "title": "SCHEDULE a CONSULTATION"
+        })
+
+        @@include('common/cta/_cta.html')
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+    @@include('common/popup/_popup-economic.html',{})
+    @@include('common/cookies-message/_cookies-message.html',{})
+
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

@@ -23,7 +23,8 @@ class App {
 		this.popupHandler();
 		this.initSmoothScroll();
 		this.inputMaskInit();
-		//this.tabsInit();
+		this.tabsInit();
+		this.selectInit();
 
 		window.addEventListener('load', () => {
 			document.body.classList.add('page-is-load');
@@ -49,6 +50,7 @@ class App {
 		@@include('../common/simple-cards-carousel/simple-cards-carousel.js');
 		@@include('../common/partners/partners.js');
 		@@include('../common/cards-carousel/cards-carousel.js');
+		@@include('../common/clients/clients.js');
 	}
 
 	tabsInit() {
@@ -180,6 +182,10 @@ class App {
 				})
 			})
 		}
+	}
+
+	selectInit() {
+		@@include('../common/select/select.js');
 	}
 
 	componentsScripts() {

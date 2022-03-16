@@ -5,9 +5,16 @@
     margin: 0 auto;
     width: 100%;
     max-width: 58.6rem;
+    position: relative;
 
     @media (max-width: $md3+px) {
         padding: 50px 20px 34px;
+    }
+
+    & .close-btn {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
     }
 
     &__title {

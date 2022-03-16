@@ -55,4 +55,12 @@
 		opacity: 0;
 		transition: all 0.8s ease 0s;
 	}
+
+	&__form {
+		padding-top: 6.7rem !important;
+
+		& .form__title {
+			line-height: 1em;
+		}
+	}
 }

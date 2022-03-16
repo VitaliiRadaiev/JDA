@@ -2434,6 +2434,11 @@ figure {
           box-shadow: 0px 4px 19px rgba(40, 83, 143, 0.2);
 }
 
+.text-block__media-wrap video {
+  margin: 0 !important;
+  height: 100% !important;
+}
+
 .interactive-map__body svg {
   width: 100%;
   height: auto;
@@ -3149,6 +3154,13 @@ figure {
   margin: 0 auto;
   width: 100%;
   max-width: 58.6rem;
+  position: relative;
+}
+
+.form .close-btn {
+  position: absolute;
+  top: 2.5rem;
+  right: 2rem;
 }
 
 .form__title {
@@ -3364,6 +3376,14 @@ figure {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+}
+
+.popup__form {
+  padding-top: 6.7rem !important;
+}
+
+.popup__form .form__title {
+  line-height: 1em;
 }
 
 .economic {

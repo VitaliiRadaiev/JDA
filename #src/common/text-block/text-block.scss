@@ -46,5 +46,10 @@
             display: block;
             box-shadow: 0px 4px 19px rgba(40, 83, 143, 0.2);
         }
+
+        & video {
+            margin: 0 !important;
+            height: 100% !important;
+        }
     }
 }

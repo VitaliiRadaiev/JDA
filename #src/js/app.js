@@ -31,7 +31,6 @@ class App {
 
 			this.setPaddingTopHeaderSize();
 			this.videoHandlerInit();
-			//this.scrollTgriggerAnimationInit();
 			this.slidersInit();
 			this.componentsScripts();
 		});

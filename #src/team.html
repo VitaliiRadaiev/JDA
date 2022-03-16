@@ -7,11 +7,13 @@
 <body>
     <div class="_preload-body"></div>
     <!-- == TOP LINE ================== -->
-    @@include('common/header/_header.html',{})
+    @@include('common/header/_header.html',{
+        "mod": ""
+    })
     <!-- == // TOP LINE ================== -->
 
 
-    <main class="_page home-page" data-padding-top-header-size>
+    <main class="_page" data-padding-top-header-size>
         @@include('common/hero/_hero.html', {
         "title": "Our Team"
         })

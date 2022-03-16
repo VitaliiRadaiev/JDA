@@ -285,6 +285,14 @@ figure {
 	}
 }
 
+.link {
+	font-family: $secondFontFamily;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
+}
+
 .box {
 	background: #ffffff;
 	border-radius: 2rem;

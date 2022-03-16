@@ -1560,6 +1560,14 @@ figure {
   text-decoration: underline;
 }
 
+.link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
 .box {
   background: #ffffff;
   border-radius: 2rem;
@@ -1864,7 +1872,7 @@ figure {
   z-index: 48;
 }
 
-.header--is-scroll {
+.header--is-scroll:not(.header--simple) {
   -webkit-box-shadow: 0px 4px 19px rgba(40, 83, 143, 0.3);
           box-shadow: 0px 4px 19px rgba(40, 83, 143, 0.3);
 }
@@ -1872,6 +1880,19 @@ figure {
 .header--is-scroll .header__body {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.header--simple {
+  background-color: transparent;
+  position: absolute;
+}
+
+.header--simple .header__row-1 {
+  margin-bottom: 0;
+}
+
+.header--simple .header__row-2 {
+  display: none;
 }
 
 .header__body {
@@ -1909,10 +1930,22 @@ figure {
   height: auto;
 }
 
+.header__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  margin-right: 2.4rem;
+}
+
 .header__btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
 }
 
 .header__btn:not(:last-child) {
@@ -3122,6 +3155,15 @@ figure {
   margin-bottom: 2.4rem;
 }
 
+.form__text {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.form__text.text-content {
+  font-size: 1.8rem;
+}
+
 .form__item {
   margin-left: auto;
   margin-right: auto;
@@ -3131,6 +3173,14 @@ figure {
 
 .form__item:not(:last-child) {
   margin-bottom: 1.9rem;
+}
+
+.form__item--has-link {
+  margin-top: -1rem;
+}
+
+.form__link {
+  padding: 0 1.5rem;
 }
 
 .form__submit {
@@ -4487,6 +4537,36 @@ figure {
   margin-bottom: 0;
 }
 
+.login {
+  position: relative;
+  min-height: 100vh;
+}
+
+.login__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.login__bg img {
+  opacity: 0.25;
+}
+
+.login__body {
+  position: relative;
+  z-index: 2;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.login__form .form__title {
+  margin-bottom: 2.5rem;
+}
+
 @media (min-width: 576px) {
   .w-sm-auto {
     width: auto !important;
@@ -4858,10 +4938,6 @@ figure {
     font-weight: 400;
   }
 
-  body {
-    padding-bottom: 7.4rem;
-  }
-
   .text-block__text--secondary {
     padding: 0 50px;
   }
@@ -4995,6 +5071,10 @@ figure {
 
   .header__logo {
     margin: 0 auto;
+  }
+
+  .header__link {
+    display: none;
   }
 
   .header__btn {

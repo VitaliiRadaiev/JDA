@@ -302,7 +302,6 @@ class App {
 
 			this.setPaddingTopHeaderSize();
 			this.videoHandlerInit();
-			//this.scrollTgriggerAnimationInit();
 			this.slidersInit();
 			this.componentsScripts();
 		});
@@ -314,6 +313,7 @@ class App {
 let mobileMenu = document.querySelector('[data-mobile-menu]');
 let burger = document.querySelector('[data-action="open-mobile-menu"]');
 let mobileMenuCloseBtn = document.querySelector('[data-action="close-mobile-menu"]');
+let mobileNav = document.querySelector('[data-mobile-nav]');
 
 if (header) {
     window.addEventListener('scroll', () => {
@@ -362,6 +362,20 @@ if(mobileMenu && burger && mobileMenuCloseBtn) {
         document.body.classList.remove('overflow-hidden');
         document.documentElement.classList.remove('overflow-hidden');
     })
+}
+
+if(mobileNav) {
+    const setBottomPadding = () => {
+        if(document.documentElement.clientWidth < 992) {
+            document.body.style.paddingBottom = mobileNav.clientHeight + 'px';
+        } else {
+            document.body.style.paddingBottom = '0px';
+        }
+    }
+
+    setBottomPadding();
+
+    window.addEventListener('resize', setBottomPadding)
 };
 	}
 

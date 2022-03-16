@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JDA</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header header--simple" data-header data-popup="lock-padding">
+        <div class="header__body container">
+            <div class="header__row-1">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo/logo.svg" alt="logo">
+                    </a>
+                </div>
+    
+                <a href="#" class="header__link">Don’t have an account?</a>
+                <a href="#" class="header__btn btn btn--secondary">Sign Up</a>
+            </div>
+    
+            <div class="header__row-2">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#" class="menu__link current-menu-item">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Team</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link ">About</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a class="sub-menu__link" href="#">Omega</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Rado</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Longines</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Tissot</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Balmain</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Certina</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link ">Areas</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a class="sub-menu__link" href="#">Omega</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Rado</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Longines</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Tissot</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Balmain</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Certina</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link ">Services</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a class="sub-menu__link" href="#">Omega</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Rado</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Longines</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Tissot</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Balmain</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Certina</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link ">Industries</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a class="sub-menu__link" href="#">Omega</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Rado</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Longines</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Tissot</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Balmain</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Certina</a>
+                                </li>
+                                <li>
+                                    <a class="sub-menu__link" href="#">Calvin Klein</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page">
+
+        <div class="login" data-padding-top-header-size>
+            <div class="login__bg ibg">
+                <img src="img/photo/login-bg.jpg" alt="">
+            </div>
+            <div class="login__body container">
+                <form class="login__form form box">
+                    <h3 class="form__title text-center">lOG IN</h3>
+                    <div class="form__text text-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus dolor, congue in rutrum ac, convallis sagittis turpis. 
+                    </div>
+                    <div class="form__item">
+                        <input class="input" type="text" placeholder="Email/Username">
+                    </div>
+                    <div class="form__item">
+                        <input class="input" type="password" placeholder="Password">
+                    </div>
+                    <div class="form__item form__item--has-link">
+                        <a class="form__link link" href="#">Forgot password?</a>
+                    </div>
+                    <button class="form__submit btn btn--secondary">Sign In</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>

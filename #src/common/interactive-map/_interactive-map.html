@@ -234,17 +234,12 @@
                     </svg>          
                     
                 <script>
-                    // скрип для примера
                     let interactiveMap = document.querySelector('[data-interactive-map]');
                     if(interactiveMap) {
                         interactiveMap.addEventListener('click', (e) => {
                             if(e.target.closest('[data-id]')) {
-                                // получить id штата
                                 let id = e.target.dataset.id;
-                                console.log(id);
-
-                                // открыть попап
-                                popup.open('#popupEconomic');
+                                popup.open(`#${id}`);
                             }
                         })
                     }

@@ -42,6 +42,16 @@
         }
     }
 
+    &--menu-hide {
+        & .header__row-1 {
+            margin-bottom: 0;
+        }
+
+        & .header__row-2 {
+            display: none;
+        }
+    }
+
     &__body {
         padding-top: 3rem;
         padding-bottom: 2.4rem;
@@ -281,6 +291,12 @@
 
     @media (min-width: 992px) {
         display: none;
+    }
+
+    &--menu-hide {
+        & .mobile-nav__item[data-action="open-mobile-menu"] {
+            display: none;
+        }
     }
 
     &__body {

@@ -43,6 +43,9 @@
         color: #fff;
         padding-top: 7.7rem;
         padding-bottom: 6.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @media (max-width: $md3+px) {
             display: flex;
@@ -55,12 +58,7 @@
 
     &__title {
         margin-bottom: 3rem;
-        max-width: 15em;
-
-        @media (max-width: $md3+px) {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+        max-width: 10em;
     }
 
     &__subtitle {
@@ -68,10 +66,10 @@
         line-height: 1em;
         margin-bottom: 4rem;
         font-weight: 400;
+        max-width: 13em;
 
         @media (max-width: $md3+px) {
             font-size: 24px;
-            margin-top: 40px;
         }
     }
 

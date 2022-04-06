@@ -1,5 +1,6 @@
-jQuery(document).ready(function ($) {
+@@include('plugins/fancybox.min.js');
 
+jQuery(document).ready(function ($) {
 
   $('img.img-svg').each(function () {
     var $img = $(this);

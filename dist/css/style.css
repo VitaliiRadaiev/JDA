@@ -3801,6 +3801,25 @@ figure {
   text-decoration: underline;
 }
 
+.card-with-play-icon .card__img:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 12rem;
+  height: 12rem;
+  background-position: 64% 50%;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkiIGhlaWdodD0iMTE0IiB2aWV3Qm94PSIwIDAgOTkgMTE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOTguNzMzNCA1Ny4xNTE1TDAuNjMyOTY3IDExMy44NjhMMC42MzI5NzIgMC40MzUzODJMOTguNzMzNCA1Ny4xNTE1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+}
+
 .list-col-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6618,6 +6637,11 @@ figure {
 
   h3.team-title {
     font-size: 38px;
+  }
+
+  .card-with-play-icon .card__img:before {
+    width: 9rem;
+    height: 9rem;
   }
 
   .form__item {
